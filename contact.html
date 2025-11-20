@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contáctanos para una consulta en derecho deportivo. Disponible 24/7 por WhatsApp, llamada o correo.">
+    <title>Contacto - Sports Law Firm</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.js">
+</head>
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-gavel"></i>
+                    <span>Sports Law</span>
+                </div>
+                <nav class="nav-menu">
+                    <a href="index.html" data-lang-es="Inicio" data-lang-en="Home">Inicio</a>
+                    <a href="about.html" data-lang-es="Sobre Nosotros" data-lang-en="About Us">Sobre Nosotros</a>
+                    <a href="services.html" data-lang-es="Servicios" data-lang-en="Services">Servicios</a>
+                    <a href="cases.html" data-lang-es="Casos de Éxito" data-lang-en="Success Cases">Casos de Éxito</a>
+                    <a href="blog.html" data-lang-es="Blog" data-lang-en="Blog">Blog</a>
+                    <a href="#" class="active" data-lang-es="Contacto" data-lang-en="Contact">Contacto</a>
+                </nav>
+                <div class="language-toggle">
+                    <button class="lang-btn active" data-lang="es">ES</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- BREADCRUMB -->
+    <section class="breadcrumb">
+        <div class="container">
+            <a href="index.html" data-lang-es="Inicio" data-lang-en="Home">Inicio</a>
+            <span>/</span>
+            <span data-lang-es="Contacto" data-lang-en="Contact">Contacto</span>
+        </div>
+    </section>
+
+    <!-- CONTACT HERO -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1 data-lang-es="Ponte en Contacto" data-lang-en="Get in Touch">Ponte en Contacto</h1>
+            <p data-lang-es="Contáctanos para una consulta confidencial y sin costo. Disponible 24/7." data-lang-en="Contact us for a confidential, no-cost consultation. Available 24/7.">Contáctanos para una consulta confidencial y sin costo. Disponible 24/7.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT CONTENT -->
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- CONTACT FORM -->
+                <div class="contact-form-wrapper">
+                    <h2 data-lang-es="Formulario de Contacto" data-lang-en="Contact Form">Formulario de Contacto</h2>
+                    <form id="contact-form" method="POST" action="https://formspree.io/f/YOUR_FORM_ID">
+                        <div class="form-group">
+                            <label for="name" data-lang-es="Nombre Completo" data-lang-en="Full Name">Nombre Completo *</label>
+                            <input type="text" id="name" name="name" required placeholder="Tu nombre completo">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" data-lang-es="Correo Electrónico" data-lang-en="Email Address">Correo Electrónico *</label>
+                            <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" data-lang-es="Teléfono" data-lang-en="Phone">Teléfono</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+1 (XXX) XXX-XXXX">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="country" data-lang-es="País/Región" data-lang-en="Country/Region">País/Región</label>
+                            <select id="country" name="country">
+                                <option value="">Selecciona un país</option>
+                                <option value="mexico">México</option>
+                                <option value="panama">Panamá</option>
+                                <option value="costa-rica">Costa Rica</option>
+                                <option value="colombia">Colombia</option>
+                                <option value="argentina">Argentina</option>
+                                <option value="brazil">Brasil</option>
+                                <option value="chile">Chile</option>
+                                <option value="usa">Estados Unidos</option>
+                                <option value="canada">Canadá</option>
+                                <option value="other">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service" data-lang-es="Tipo de Servicio" data-lang-en="Service Type">Tipo de Servicio *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Selecciona un servicio</option>
+                                <option value="arbitraje">Arbitraje Deportivo (CAS)</option>
+                                <option value="contratos">Negociación de Contratos</option>
+                                <option value="transferencias">Transferencias Internacionales</option>
+                                <option value="compliance">Compliance y Regulación</option>
+                                <option value="derechos-imagen">Derechos de Imagen</option>
+                                <option value="litigios">Litigios Deportivos</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" data-lang-es="Describe Tu Caso" data-lang-en="Describe Your Case">Describe Tu Caso *</label>
+                            <textarea id="message" name="message" required rows="6" placeholder="Cuéntanos sobre tu situación legal en derecho deportivo..."></textarea>
+                        </div>
+
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy" data-lang-es="Acepto los términos de privacidad" data-lang-en="I accept privacy terms">Acepto los términos de privacidad y confidencialidad *</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" data-lang-es="Enviar Consulta" data-lang-en="Send Consultation">Enviar Consulta</button>
+                    </form>
+                </div>
+
+                <!-- CONTACT INFO -->
+                <div class="contact-info-wrapper">
+                    <h2 data-lang-es="Información de Contacto" data-lang-en="Contact Information">Información de Contacto</h2>
+
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="method-content">
+                            <h3 data-lang-es="WhatsApp" data-lang-en="WhatsApp">WhatsApp</h3>
+                            <p data-lang-es="Disponible 24/7 para consultas urgentes" data-lang-en="Available 24/7 for urgent inquiries">Disponible 24/7 para consultas urgentes</p>
+                            <a href="https://wa.me/YOUR_WHATSAPP_NUMBER" target="_blank" class="contact-link">+1 (XXX) XXX-XXXX</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="method-content">
+                            <h3 data-lang-es="Llamada Directa" data-lang-en="Direct Call">Llamada Directa</h3>
+                            <p data-lang-es="Habla con nuestro equipo durante horas de oficina" data-lang-en="Speak with our team during business hours">Habla con nuestro equipo durante horas de oficina</p>
+                            <a href="tel:+1XXXXXXXXXX" class="contact-link">+1 (XXX) XXX-XXXX</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="method-content">
+                            <h3 data-lang-es="Correo Electrónico" data-lang-en="Email">Correo Electrónico</h3>
+                            <p data-lang-es="Respuesta en menos de 24 horas" data-lang-en="Response within 24 hours">Respuesta en menos de 24 horas</p>
+                            <a href="/cdn-cgi/l/email-protection#b7ded9d1d8f7c4c7d8c5c3c4dbd6c099d2cfd6dac7dbd2" class="contact-link"><span class="__cf_email__" data-cfemail="2d44434b426d5e5d425f595e414c5a0348554c405d4148">[email&#160;protected]</span></a>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="method-content">
+                            <h3 data-lang-es="Oficina Principal" data-lang-en="Main Office">Oficina Principal</h3>
+                            <p>Ciudad, País<br>Código Postal XXXXX</p>
+                        </div>
+                    </div>
+
+                    <div class="availability-box">
+                        <h3 data-lang-es="Horarios de Atención" data-lang-en="Business Hours">Horarios de Atención</h3>
+                        <p data-lang-es="Lunes - Viernes: 9:00 AM - 6:00 PM (Zona Horaria Local)" data-lang-en="Monday - Friday: 9:00 AM - 6:00 PM (Local Time Zone)">Lunes - Viernes: 9:00 AM - 6:00 PM (Zona Horaria Local)</p>
+                        <p data-lang-es="Sábado - Domingo: Disponible por emergencias" data-lang-en="Saturday - Sunday: Available for emergencies">Sábado - Domingo: Disponible por emergencias</p>
+                        <p data-lang-es="Consultas urgentes 24/7 por WhatsApp" data-lang-en="24/7 urgent inquiries via WhatsApp">Consultas urgentes 24/7 por WhatsApp</p>
+                    </div>
+
+                    <div class="faq-section">
+                        <h3 data-lang-es="Preguntas sobre Contacto" data-lang-en="Contact FAQs">Preguntas sobre Contacto</h3>
+                        <p data-lang-es="¿Cuándo me responderán?" data-lang-en="When will I get a response?"><strong data-lang-es="¿Cuándo me responderán?" data-lang-en="When will I get a response?">¿Cuándo me responderán?</strong><br><span data-lang-es="Nos comprometemos a responder en menos de 24 horas durante días hábiles." data-lang-en="We commit to responding within 24 hours on business days.">Nos comprometemos a responder en menos de 24 horas durante días hábiles.</span></p>
+                        <p data-lang-es="¿Es gratuita la consulta inicial?" data-lang-en="Is the initial consultation free?"><strong data-lang-es="¿Es gratuita la consulta inicial?" data-lang-en="Is the initial consultation free?">¿Es gratuita la consulta inicial?</strong><br><span data-lang-es="Sí, la consulta inicial es completamente gratuita y confidencial." data-lang-en="Yes, the initial consultation is completely free and confidential.">Sí, la consulta inicial es completamente gratuita y confidencial.</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOCIAL MEDIA -->
+    <section class="social-media-contact">
+        <div class="container">
+            <h2 data-lang-es="Síguenos en Redes Sociales" data-lang-en="Follow Us on Social Media">Síguenos en Redes Sociales</h2>
+            <p data-lang-es="Mantente actualizado con noticias y artículos sobre derecho deportivo" data-lang-en="Stay updated with sports law news and articles">Mantente actualizado con noticias y artículos sobre derecho deportivo</p>
+            <div class="social-buttons">
+                <a href="#" title="LinkedIn" class="social-btn linkedin">
+                    <i class="fab fa-linkedin"></i>
+                    <span data-lang-es="LinkedIn" data-lang-en="LinkedIn">LinkedIn</span>
+                </a>
+                <a href="#" title="Instagram" class="social-btn instagram">
+                    <i class="fab fa-instagram"></i>
+                    <span data-lang-es="Instagram" data-lang-en="Instagram">Instagram</span>
+                </a>
+                <a href="#" title="Twitter" class="social-btn twitter">
+                    <i class="fab fa-twitter"></i>
+                    <span data-lang-es="Twitter" data-lang-en="Twitter">Twitter</span>
+                </a>
+                <a href="#" title="Facebook" class="social-btn facebook">
+                    <i class="fab fa-facebook"></i>
+                    <span data-lang-es="Facebook" data-lang-en="Facebook">Facebook</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-lang-es="Sobre Nosotros" data-lang-en="About Us">Sobre Nosotros</h4>
+                    <p data-lang-es="Firma especializada en derecho deportivo con alcance internacional y expertise en la región CONCACAF." data-lang-en="Firm specialized in sports law with international reach and expertise in the CONCACAF region.">Firma especializada en derecho deportivo con alcance internacional y expertise en la región CONCACAF.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-lang-es="Enlaces Rápidos" data-lang-en="Quick Links">Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="about.html" data-lang-es="Sobre Nosotros" data-lang-en="About Us">Sobre Nosotros</a></li>
+                        <li><a href="services.html" data-lang-es="Servicios" data-lang-en="Services">Servicios</a></li>
+                        <li><a href="cases.html" data-lang-es="Casos" data-lang-en="Cases">Casos</a></li>
+                        <li><a href="blog.html" data-lang-es="Blog" data-lang-en="Blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-lang-es="Contacto" data-lang-en="Contact">Contacto</h4>
+                    <p><i class="fas fa-envelope"></i> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e28b8c848da291928d9096918e8395cc879a838f928e87">[email&#160;protected]</a></p>
+                    <p><i class="fas fa-phone"></i> +1 (XXX) XXX-XXXX</p>
+                    <p><i class="fab fa-whatsapp"></i> WhatsApp disponible</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-lang-es="Síguenos" data-lang-en="Follow Us">Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-lang-es="© 2024 Sports Law
